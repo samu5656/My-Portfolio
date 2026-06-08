@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #222;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 18px 60px;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: #2563eb;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills span {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #9333ea;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a {
+  color: #2563eb;
+}
+
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  section {
+    padding: 40px 25px;
+  }
+}
