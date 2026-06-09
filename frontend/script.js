@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = "https://portfolio-backend-scn3.onrender.com";
 
 async function fetchProjects() {
   const container = document.getElementById("project-container");
